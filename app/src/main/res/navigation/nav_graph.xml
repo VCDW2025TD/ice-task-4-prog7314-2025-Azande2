@@ -1,25 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/feedFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.vcmsa.projects.memestream.FirstFragment"
-        android:label="First Fragment">
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
+        android:id="@+id/feedFragment"
+        android:name="com.vcmsa.projects.memestream.FeedFragment"
+        android:label="Feed" />
 
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.vcmsa.projects.memestream.SecondFragment"
-        android:label="Second Fragment">
-        <!-- ✅ Added reverse action -->
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/createMemeFragment"
+        android:name="com.vcmsa.projects.memestream.CreateMemeFragment"
+        android:label="Create Meme" />
 
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.vcmsa.projects.memestream.MapFragment"
+        android:label="Map" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.vcmsa.projects.memestream.ProfileFragment"
+        android:label="Profile" />
 </navigation>
