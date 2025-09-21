@@ -86,5 +86,13 @@ dependencies {
     implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.android.gms:play-services-location:21.0.1")
 
+    // Firebase Messaging
+
+
+    implementation("com.google.firebase:firebase-firestore-ktx:25.0.0")
+    implementation("com.google.firebase:firebase-messaging:24.0.0")
+
+    // For showing notifications
+    implementation("androidx.core:core-ktx:1.12.0")
 
 }
